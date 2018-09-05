@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>Hello Word !!!</h1>
+<p>Django 真有意思 啊哈哈</p>
+<hr>
+{% for foo in list %}
+    <h5>{{ foo }}</h5>
+{% endfor %}
+<p>打印出所有的书</p>
+
+<hr>
+<ul>
+    {% for book in booklist %}
+        <li><a href="/index/{{ book.id }}/"> {{ book.title }}</a></li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>
